@@ -47,13 +47,13 @@ a {
   padding: 0;
   margin: 0;
 }
-.footer__listElt {
+.footer__list2 {
   margin: 0.5rem 0;
 }
-.footer__listElt:first-child {
+.footer__list2:first-child {
   margin-top: 0;
 }
-.footer__listElt:last-child {
+.footer__list2:last-child {
   margin-bottom: 0;
 }
 .footer__link {
@@ -174,21 +174,21 @@ a {
 .tuto {
   padding: 2rem 1rem;
 }
-.tuto__title {
+.tuto__titre {
   margin-top: 0;
 }
-.tuto__steps {
+.tuto__step1 {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
 }
 @media (min-width: 64rem) {
-  .tuto__steps {
+  .tuto__step1 {
     display: flex;
   }
 }
-.tuto__step {
+.tuto__step2 {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -198,22 +198,22 @@ a {
   position: relative;
 }
 @media (min-width: 64rem) {
-  .tuto__step {
+  .tuto__step2 {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
   }
-  .tuto__step:first-child {
+  .tuto__step2:first-child {
     margin-left: 0.75rem;
   }
 }
-.tuto__step:first-child {
+.tuto__step2:first-child {
   margin-top: 0;
 }
-.tuto__step:last-child {
+.tuto__step2:last-child {
   margin-bottom: 0;
 }
-.tuto__step::before {
+.tuto__step2::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356DC;
@@ -227,7 +227,7 @@ a {
   position: absolute;
   left: -0.75rem;
 }
-.tuto__step:hover {
+.tuto__step2:hover {
   background-color: rgba(230, 175, 250, 0.2980392157);
   transition-duration: 0.25s;
 }
@@ -241,14 +241,14 @@ a {
   padding: 2rem 1rem;
 }
 
-.cards {
+.carte1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
 @media (min-width: 64rem) {
-  .cards {
+  .carte1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -287,7 +287,7 @@ a {
 .card__content {
   flex: 1;
 }
-.card__title {
+.card__titre {
   margin: 0;
   margin-bottom: 0.25rem;
 }
@@ -295,7 +295,7 @@ a {
   margin: 0;
 }
 
-.header--withBackArrow {
+.header--fleche-retour {
   position: relative;
 }
 .header__arrow {
@@ -323,7 +323,7 @@ a {
   height: 30px;
 }
 
-.heroImg {
+.Img {
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
@@ -342,7 +342,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.menu__title {
+.menu__titre {
   font-family: "Shrikhand", "cursive";
 }
 .menu__btn {
@@ -404,13 +404,13 @@ a {
   overflow: hidden;
   padding: 0 1rem;
 }
-.submenu__title {
+.submenu__titre {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
-.submenu__title::after {
+.submenu__titre::after {
   content: "";
   width: 3rem;
   height: 0.25rem;
@@ -440,7 +440,7 @@ a {
   overflow: hidden;
   flex: 1;
 }
-.menuItem__title {
+.menuItem__titre {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -452,7 +452,7 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menuItem__price {
+.menuItem__prix {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;

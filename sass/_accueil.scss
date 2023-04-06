@@ -91,11 +91,11 @@
 .tuto {
   padding: ( $appPadding + 1rem ) $appPadding;
 
-  &__title {
+  &__titre {
     margin-top: 0;
   }
 
-  &__steps {
+  &__step1 {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -106,7 +106,7 @@
     }
   }
 
-  &__step {
+  &__step2 {
     padding: 1.5rem;
     margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -165,7 +165,7 @@
   padding: ($appPadding + 1rem) $appPadding;
 }
 
-.cards {
+.carte1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
@@ -214,7 +214,7 @@
     flex: 1;
   }
 
-  &__title {
+  &__titre {
     margin: 0;
     margin-bottom: 0.25rem;
   }
